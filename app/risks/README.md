@@ -1,9 +1,9 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Tue Mar 08 2022 20:45:21 GMT+0800 (中国标准时间)|
-|**App Generator**<br>@sap/generator-fiori-elements|
-|**App Generator Version**<br>1.5.1|
+|**Generation Date and Time**<br>Tue Oct 19 2021 11:10:43 GMT+0300 (Eastern European Summer Time)|
+|**App Generator**<br>@sap/generator-fiori|
+|**App Generator Version**<br>1.3.6|
 |**Generation Platform**<br>Visual Studio Code|
 |**Floorplan Used**<br>List Report Object Page V4|
 |**Service Type**<br>Local Cap|
@@ -12,7 +12,7 @@
 |**Application Title**<br>Risks|
 |**Namespace**<br>ns|
 |**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.98.0|
+|**UI5 Version**<br>Latest|
 |**Enable Code Assist Libraries**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Enable Telemetry**<br>True|

@@ -10,12 +10,12 @@
     "express": "^4"
   },
   "devDependencies": {
-    "@sap/ux-specification": "^1.96.5",
+    "@sap/ux-specification": "^1.90.12",
     "sqlite3": "^4.2.0"
   },
   "scripts": {
     "start": "cds run",
-    "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4"
+    "watch-risks": "cds watch --open risks/webapp/index.html#fe-lrop-v4"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",

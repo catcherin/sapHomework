@@ -9,9 +9,8 @@ It's planned to provide multiple modules that are built upon each other. You can
 If you want to start from a specific tutorial module, get the name of its branch from the [tutorial](http://sap-samples.github.io/cloud-cap-risk-management), download this repository and switch to the desired branch:
 
 ```bash
-git clone https://github.com/SAP-samples/cloud-cap-risk-management
-cd cloud-cap-risk-management
-git checkout create-ui-fiori-elements
+git clone https://github.com/catcherin/sapHomework.git
+cd sapHomework
 ```
 
 ## Known Issues

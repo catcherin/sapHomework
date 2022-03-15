@@ -56,6 +56,7 @@ annotate RiskService.Risks with @(
 		FieldGroup#Main: {
 			Data: [
 				{Value: miti_ID},
+				{Value: measure},
 				{
 					Value: prio,
 					Criticality: criticality

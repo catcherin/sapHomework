@@ -7,6 +7,7 @@ using { managed } from '@sap/cds/common';
     prio        : String(5);
     descr       : String;
     miti        : Association to Mitigations;
+    measure     : String;
     impact      : Integer;
     criticality : Integer;
   }

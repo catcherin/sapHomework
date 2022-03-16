@@ -1,0 +1,4 @@
+ID;createdAt;createdBy;date;description;result;risk_id;miti_id;
+20466923-7d57-4e76-b14c-e53fd97dcb11;2019-10-24;max.mustermann@muster.com;12.3.2022;result1;1;20466922-7d57-4e76-b14c-e53fd97dcb11;20466921-7d57-4e76-b14c-e53fd97dcb11;
+20466923-7d57-4e76-b14c-e53fd97dcb12;2019-10-24;max.mustermann@muster.com;13.3.2022;result2;3;20466922-7d57-4e76-b14c-e53fd97dcb12;20466921-7d57-4e76-b14c-e53fd97dcb12;
+20466923-7d57-4e76-b14c-e53fd97dcb13;2019-10-24;max.mustermann@muster.com;14.3.2022;result3;5;20466922-7d57-4e76-b14c-e53fd97dcb13;20466921-7d57-4e76-b14c-e53fd97dcb13;

@@ -1,5 +1,98 @@
 using RiskService from './risk-service';
 
+annotate RiskService.Reports with {
+	date        @title: 'Date';
+	description @title: 'Description';
+	result      @title: 'Result';
+	risk        @title: 'Risk';
+	miti        @title: 'Mitigation';
+}
+
+annotate RiskService.Reports with @(
+	UI: {
+		HeaderInfo: {
+			TypeName: 'Reports',
+			TypeNamePlural: 'Reports',
+			Title          : {
+                $Type : 'UI.DataField',
+                Value : description
+            },
+			// Description : {
+			// 	$Type: 'UI.DataField',
+			// 	Value: description
+			// }
+		},
+		SelectionFields: [result],
+		LineItem: [
+			{Value: date},
+			{Value: risk_ID},
+			{Value: miti_ID},
+			{
+				Value: result,
+				Criticality: criticality
+			}
+		],
+		Facets: [
+			{$Type: 'UI.ReferenceFacet', Label: 'Main', Target: '@UI.FieldGroup#Main'}
+		],
+		FieldGroup#Main: {
+			Data: [
+				{Value: date},
+				{Value: risk_ID},
+				{Value: miti_ID},
+				{
+					Value: result,
+					Criticality: criticality
+				}
+			]
+		}
+	},
+) {
+
+};
+
+annotate RiskService.Reports with {
+	risk @(
+		Common: {
+			//show text, not id for mitigation in the context of risks
+			Text: risk.descr, TextArrangement: #TextOnly,
+			ValueList: {
+				Label: 'Risks',
+				CollectionPath: 'Risks',
+				Parameters: [
+					{ $Type: 'Common.ValueListParameterInOut',
+						LocalDataProperty: risk_ID,
+						ValueListProperty: 'ID'
+					},
+					{ $Type: 'Common.ValueListParameterDisplayOnly',
+						ValueListProperty: 'descr'
+					}
+				]
+			}
+		}
+	);
+
+	miti @(
+		Common: {
+			//show text, not id for mitigation in the context of risks
+			Text: miti.description  , TextArrangement: #TextOnly,
+			ValueList: {
+				Label: 'Mitigations',
+				CollectionPath: 'Mitigations',
+				Parameters: [
+					{ $Type: 'Common.ValueListParameterInOut',
+						LocalDataProperty: miti_ID,
+						ValueListProperty: 'ID'
+					},
+					{ $Type: 'Common.ValueListParameterDisplayOnly',
+						ValueListProperty: 'description'
+					}
+				]
+			}
+		}
+	);
+}
+
 annotate RiskService.Risks with {
 	title       @title: 'Title';
 	prio        @title: 'Priority';

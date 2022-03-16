@@ -15,7 +15,8 @@
   "scripts": {
     "start": "cds run",
     "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4",
-    "watch-reports": "cds watch --open reports/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4"
+    "watch-reports": "cds watch --open reports/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4",
+    "watch-mitigations": "cds watch --open mitigations/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",

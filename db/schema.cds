@@ -28,5 +28,5 @@ using { managed } from '@sap/cds/common';
     owner        : String;
     timeline     : String;
     risks        : Association to many Risks on risks.miti = $self;
-    reports      : Association to many Reports on reports.miti = $self;
+    reports     : Association to many Reports on reports.miti = $self;
   }
